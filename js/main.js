@@ -39,11 +39,12 @@ hardBtn.addEventListener("click", function(){
 });
 
 resetBtn.addEventListener("click", function(){
-  h1.style.backgroundColor = "#232323";
-  resetBtn.textContent = "New Colors";
+  h1.style.backgroundColor = "steelblue";
+  this.textContent = "New Colors";
   colors = generateRandomColors(numSquares);
   pickedColor = pickColor();
   colorDisplay.textContent = pickedColor;
+  messageDisplay.textContent = "";
   for(var i = 0; i < squares.length; i++){
     squares[i].style.backgroundColor = colors[i];
   }
